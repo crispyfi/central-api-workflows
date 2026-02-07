@@ -66,7 +66,7 @@ def main():
 
     print(create_profile)
 
-    # Use the Scopes SDK to assign the SSID to the site
+    # Assign Profile to Scope
     scopes = Scopes(central_conn)
     result = scopes.assign_profile_to_scope(
         profile_name = f"{endpoint}/{config_dict['ssid']}",
