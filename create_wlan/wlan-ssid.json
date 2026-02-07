@@ -1,0 +1,97 @@
+{
+    "ssid": "demo-wpa3-sae",
+    "enable": true,
+    "forward-mode": "FORWARD_MODE_BRIDGE",
+    "dmo": {
+        "enable": true,
+        "channel-utilization-threshold": 90,
+        "clients-threshold": 6
+    },
+    "broadcast-filter-ipv4": "BCAST_FILTER_ARP",
+    "broadcast-filter-ipv6": "UCAST_FILTER_RA",
+    "local-proxy-ns": true,
+    "optimize-mcast-rate": true,
+    "ssid-utf8": true,
+    "advertise-apname": true,
+    "disable-on-6ghz-mesh": false,
+    "dot11k": true,
+    "dot11r": false,
+    "dtim-period": 1,
+    "ftm-responder": false,
+    "hide-ssid": false,
+    "auth-req-thresh": 0,
+    "explicit-ageout-client": false,
+    "inactivity-timeout": 1000,
+    "local-probe-req-thresh": 0,
+    "max-clients-threshold": 128,
+    "rf-band": "BAND_ALL",
+    "rrm-quiet-ie": false,
+    "high-throughput": {
+        "enable": true,
+        "very-high-throughput": true
+    },
+    "g-legacy-rates": {
+        "basic-rates": [
+            "RATE_12MB",
+            "RATE_24MB"
+        ],
+        "tx-rates": [
+            "RATE_12MB",
+            "RATE_18MB",
+            "RATE_24MB",
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+        ]
+    },
+    "a-legacy-rates": {
+        "basic-rates": [
+            "RATE_12MB",
+            "RATE_24MB"
+        ],
+        "tx-rates": [
+            "RATE_12MB",
+            "RATE_18MB",
+            "RATE_24MB",
+            "RATE_36MB",
+            "RATE_48MB",
+            "RATE_54MB"
+        ]
+    },
+    "high-efficiency": {
+        "enable": true
+    },
+    "extremely-high-throughput": {
+        "enable": true,
+        "mlo": false,
+        "beacon-protection": false
+    },
+    "wmm-cfg": {
+        "uapsd": true
+    },
+    "advertise-timing": false,
+    "opmode": "WPA3_SAE",
+    "mac-authentication": false,
+    "personal-security": {
+        "passphrase-format": "STRING",
+        "wpa-passphrase": "Aruba123!"
+    },
+    "type": "EMPLOYEE",
+    "use-ip-for-calling-station-id": false,
+    "called-station-id": {
+        "type": "MAC_ADDRESS",
+        "include-ssid": false
+    },
+    "cloud-auth": false,
+    "wpa3-transition-mode-enable": false,
+    "denylist": true,
+    "max-authentication-failures": 0,
+    "enforce-dhcp": true,
+    "pan": false,
+    "vlan-selector": "VLAN_RANGES",
+    "vlan-id-range": [
+        "1"
+    ],
+    "out-of-service": "NONE",
+    "client-isolation": true
+}
