@@ -1,5 +1,6 @@
 import json
-
+import yaml
+from jinja2 import Environment, FileSystemLoader, TemplateNotFound
 from pycentral import NewCentralBase
 from pycentral.profiles import Profiles
 from pycentral.scopes import Scopes
@@ -38,15 +39,38 @@ def main():
 
     # Load configuration file
     config_file = "wlan-ssid.json"
+    yaml_file = "vars.yaml"
 
+    # Load YAML variables
     try:
-        with open(config_file, "r") as file:
-            config_dict = json.load(file)
+        with open(yaml_file, "r") as file:
+            variables = yaml.safe_load(file)
     except FileNotFoundError:
+        print(f"Error: YAML file '{yaml_file}' not found.")
+        return 1
+    except yaml.YAMLError as e:
+        print(f"Error parsing YAML file '{yaml_file}': {e}")
+        return 1
+
+    # Setup Jinja environment
+    env = Environment(loader=FileSystemLoader("."))
+
+    # Load and render JSON template
+    try:
+        template = env.get_template(config_file)
+        rendered_json = template.render(variables)
+    except TemplateNotFound:
         print(f"Error: Config file '{config_file}' not found.")
         return 1
+    except Exception as e:
+        print(f"Error rendering template '{config_file}': {e}")
+        return 1
+
+    # Convert rendered JSON string to dict
+    try:
+        config_dict = json.loads(rendered_json)
     except json.JSONDecodeError as e:
-        print(f"Error parsing JSON file '{config_file}' {e}")
+        print(f"Error parsing rendered JSON '{config_file}': {e}")
         return 1
 
     # Create API endpoint URL
