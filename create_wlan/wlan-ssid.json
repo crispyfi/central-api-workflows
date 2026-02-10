@@ -1,5 +1,5 @@
 {
-    "ssid": "demo-wpa3-sae",
+    "ssid": "{{ ssid }}",
     "enable": true,
     "forward-mode": "FORWARD_MODE_BRIDGE",
     "dmo": {
@@ -74,7 +74,7 @@
     "mac-authentication": false,
     "personal-security": {
         "passphrase-format": "STRING",
-        "wpa-passphrase": "Aruba123!"
+        "wpa-passphrase": "{{ passphrase }}"
     },
     "type": "EMPLOYEE",
     "use-ip-for-calling-station-id": false,
@@ -90,7 +90,7 @@
     "pan": false,
     "vlan-selector": "VLAN_RANGES",
     "vlan-id-range": [
-        "1"
+        "{{ vlan }}"
     ],
     "out-of-service": "NONE",
     "client-isolation": true
