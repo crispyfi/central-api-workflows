@@ -1,0 +1,5 @@
+{
+  "vlan-parameters": {
+    "access-vlan": 100
+  }
+}

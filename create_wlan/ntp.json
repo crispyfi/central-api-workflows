@@ -1,0 +1,26 @@
+{
+  "name": "{{ ntp.name }}",
+  "servers": [
+    {
+      "address": "0.au.pool.ntp.org",
+      "tx-mode": "IBURST",
+      "iburst": "INITIAL",
+      "max-poll": 6,
+      "min-poll": 4
+    },
+    {
+      "address": "1.au.pool.ntp.org",
+      "tx-mode": "IBURST",
+      "iburst": "INITIAL",
+      "max-poll": 6,
+      "min-poll": 4
+    },
+    {
+      "address": "2.au.pool.ntp.org",
+      "tx-mode": "IBURST",
+      "iburst": "INITIAL",
+      "max-poll": 6,
+      "min-poll": 4
+    }
+  ]
+}

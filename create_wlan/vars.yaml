@@ -1,3 +1,12 @@
-ssid: test-wpa3-sae
-passphrase: Aruba123!
-vlan: 100
+assignment:
+  device_persona: CAMPUS_AP
+  scope_type: site_collection
+  scope_name: Lab
+
+ssid:
+  name: test-wpa3-sae
+  passphrase: Aruba123!
+  vlan: 100
+
+ntp:
+  name: test-ntp-profile
