@@ -127,6 +127,22 @@ def main():
         print(f"\nFailed to connect to Central: {e}")
         return 1
     
+    # Create and assign roles
+
+    create_profile(
+        endpoint="roles",
+        bulk_key="profile",
+        profile_name=variables["roles"]["name"],
+        config_file="roles.json",
+        central_conn=central_conn,
+        env=env,
+        variables=variables,
+        device_persona=device_persona,
+        scope_type=scope_type,
+        scope_name=scope_name,
+    )
+
+
     # Create and assign SSID Profile
 
     create_profile(
@@ -142,20 +158,6 @@ def main():
         scope_name=scope_name,
     )
 
-    # Create and assign NTP Profile
-
-    create_profile(
-        endpoint="ntp",
-        bulk_key="profile",
-        profile_name=variables["ntp"]["name"],
-        config_file="ntp.json",
-        central_conn=central_conn,
-        env=env,
-        variables=variables,
-        device_persona=device_persona,
-        scope_type=scope_type,
-        scope_name=scope_name,
-    )
 
 if __name__ == "__main__":
     exit(main())

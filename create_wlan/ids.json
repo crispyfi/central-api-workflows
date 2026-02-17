@@ -1,0 +1,28 @@
+{
+  "name": "{{ ids.name }}",
+  "detection-protection": {
+    "client-detection": [
+      "LOW"
+    ],
+    "client-protection": [
+      "OFF"
+    ],
+    "infrastructure-detection": [
+      "LOW"
+    ],
+    "infrastructure-protection": [
+      "OFF"
+    ],
+    "wired-containment": {
+      "enable": false
+    },
+    "wireless-containment": {
+      "type": "NONE"
+    }
+  },
+  "wired-protection": {
+    "drop-bad-arp": false,
+    "fix-dhcp": false,
+    "poison-check": false
+  }
+}

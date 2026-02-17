@@ -127,13 +127,28 @@ def main():
         print(f"\nFailed to connect to Central: {e}")
         return 1
     
-    # Create and assign SSID Profile
+    # Create and assign Radio Profile
 
     create_profile(
-        endpoint="wlan-ssids",
-        bulk_key="wlan-ssid",
-        profile_name=variables["ssid"]["name"],
-        config_file="wlan-ssids.json",
+        endpoint="radios",
+        bulk_key="profile",
+        profile_name=variables["radio"]["name"],
+        config_file="radios.json",
+        central_conn=central_conn,
+        env=env,
+        variables=variables,
+        device_persona=device_persona,
+        scope_type=scope_type,
+        scope_name=scope_name,
+    )
+
+    # Create and assign IDS Profile
+
+    create_profile(
+        endpoint="ids",
+        bulk_key="profile",
+        profile_name=variables["ids"]["name"],
+        config_file="ids.json",
         central_conn=central_conn,
         env=env,
         variables=variables,

@@ -1,0 +1,173 @@
+{
+  "name": "test-radio-profile",
+  "radio": [
+    {
+      "profile": "RADIO_2DOT4G",
+      "radio-type": "DOT11G_TYPE",
+      "arm-control": {
+        "channels-for-2dot4GHz": [
+          "CHAN_1",
+          "CHAN_6",
+          "CHAN_11"
+        ],
+        "min-channel-bandwidth": "BW_20MHZ",
+        "max-channel-bandwidth": "BW_20MHZ",
+        "max-tx-power": "12.0",
+        "min-tx-power": "6.0"
+      }
+    },
+    {
+      "profile": "RADIO_5G",
+      "radio-type": "DOT11A_TYPE",
+      "arm-control": {
+        "channels-for-5GHz": [
+          "CHAN_36",
+          "CHAN_40",
+          "CHAN_44",
+          "CHAN_48",
+          "CHAN_52",
+          "CHAN_56",
+          "CHAN_60",
+          "CHAN_64",
+          "CHAN_100",
+          "CHAN_104",
+          "CHAN_108",
+          "CHAN_112",
+          "CHAN_116",
+          "CHAN_120",
+          "CHAN_124",
+          "CHAN_128",
+          "CHAN_132",
+          "CHAN_136",
+          "CHAN_140",
+          "CHAN_149",
+          "CHAN_153",
+          "CHAN_157",
+          "CHAN_161",
+          "CHAN_165"
+        ],
+        "min-channel-bandwidth": "BW_20MHZ",
+        "max-channel-bandwidth": "BW_80MHZ"
+      }
+    },
+    {
+      "profile": "RADIO_2ND_5G",
+      "radio-type": "DOT11A_TYPE",
+      "arm-control": {
+        "channels-for-5GHz": [
+          "CHAN_36",
+          "CHAN_40",
+          "CHAN_44",
+          "CHAN_48",
+          "CHAN_52",
+          "CHAN_56",
+          "CHAN_60",
+          "CHAN_64",
+          "CHAN_100",
+          "CHAN_104",
+          "CHAN_108",
+          "CHAN_112",
+          "CHAN_116",
+          "CHAN_120",
+          "CHAN_124",
+          "CHAN_128",
+          "CHAN_132",
+          "CHAN_136",
+          "CHAN_140",
+          "CHAN_149",
+          "CHAN_153",
+          "CHAN_157",
+          "CHAN_161",
+          "CHAN_165"
+        ],
+        "min-channel-bandwidth": "BW_20MHZ",
+        "max-channel-bandwidth": "BW_80MHZ"
+      }
+    },
+    {
+      "profile": "RADIO_6G",
+      "radio-type": "DOT11_6GHZ_TYPE",
+      "ieee802dot11h": true,
+      "basic-rates": [
+        "RATE_6MB",
+        "RATE_12MB",
+        "RATE_24MB"
+      ],
+      "tx-rates": [
+        "RATE_6MB",
+        "RATE_9MB",
+        "RATE_12MB",
+        "RATE_18MB",
+        "RATE_24MB",
+        "RATE_36MB",
+        "RATE_48MB",
+        "RATE_54MB"
+      ],
+      "arm-control": {
+        "channels-for-6GHz": [
+          "CHAN_1_6GHZ",
+          "CHAN_5_6GHZ",
+          "CHAN_9_6GHZ",
+          "CHAN_13_6GHZ",
+          "CHAN_17_6GHZ",
+          "CHAN_21_6GHZ",
+          "CHAN_25_6GHZ",
+          "CHAN_29_6GHZ",
+          "CHAN_33_6GHZ",
+          "CHAN_37_6GHZ",
+          "CHAN_41_6GHZ",
+          "CHAN_45_6GHZ",
+          "CHAN_49_6GHZ",
+          "CHAN_53_6GHZ",
+          "CHAN_57_6GHZ",
+          "CHAN_61_6GHZ",
+          "CHAN_65_6GHZ",
+          "CHAN_69_6GHZ",
+          "CHAN_73_6GHZ",
+          "CHAN_77_6GHZ",
+          "CHAN_81_6GHZ",
+          "CHAN_85_6GHZ",
+          "CHAN_89_6GHZ",
+          "CHAN_93_6GHZ",
+          "CHAN_97_6GHZ",
+          "CHAN_101_6GHZ",
+          "CHAN_105_6GHZ",
+          "CHAN_109_6GHZ",
+          "CHAN_113_6GHZ",
+          "CHAN_117_6GHZ",
+          "CHAN_121_6GHZ",
+          "CHAN_125_6GHZ",
+          "CHAN_129_6GHZ",
+          "CHAN_133_6GHZ",
+          "CHAN_137_6GHZ",
+          "CHAN_141_6GHZ",
+          "CHAN_145_6GHZ",
+          "CHAN_149_6GHZ",
+          "CHAN_153_6GHZ",
+          "CHAN_157_6GHZ",
+          "CHAN_161_6GHZ",
+          "CHAN_165_6GHZ",
+          "CHAN_169_6GHZ",
+          "CHAN_173_6GHZ",
+          "CHAN_177_6GHZ",
+          "CHAN_181_6GHZ",
+          "CHAN_185_6GHZ",
+          "CHAN_189_6GHZ",
+          "CHAN_193_6GHZ",
+          "CHAN_197_6GHZ",
+          "CHAN_201_6GHZ",
+          "CHAN_205_6GHZ",
+          "CHAN_209_6GHZ",
+          "CHAN_213_6GHZ",
+          "CHAN_217_6GHZ",
+          "CHAN_221_6GHZ",
+          "CHAN_225_6GHZ",
+          "CHAN_229_6GHZ",
+          "CHAN_233_6GHZ"
+        ],
+        "min-channel-bandwidth": "BW_80MHZ",
+        "max-channel-bandwidth": "BW_160MHZ"
+      }
+    }
+  ]
+}
